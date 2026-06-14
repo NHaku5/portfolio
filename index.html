@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N.Haku ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome（アイコン用） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="header-inner container">
+      <div class="header-logo">
+        <span class="logo-name">N.Haku</span>
+        <span class="logo-catch">Web制作 / フロントエンドエンジニア</span>
+      </div>
+      <nav id="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#works" class="nav-link">Works</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-inner container">
+      <p class="hero-sub">Welcome to my portfolio</p>
+      <h1 class="hero-title">丁寧なコーディングで<br>デザインを忠実に再現</h1>
+      <p class="hero-desc">HTML / CSS / JavaScriptを中心に、<br>Web制作を行っています。</p>
+      <a href="#works" class="btn btn-primary">制作実績を見る</a>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span>自己紹介</span></h2>
+        <div class="about-text">
+          <h3 class="about-name">N.Haku</h3>
+          <p class="about-desc">
+            はじめまして。WebコーダーのN.Hakuと申します。<br>
+            フリーランスとしてWebサイトの制作・コーディングをメインに活動しています。
+          </p>
+          <p class="about-desc">
+            用意されたデザインをもとに、HTML / CSS / JavaScript を使って
+            忠実に再現することを得意としています。
+            レスポンシブ対応はもちろん、保守しやすいコーディングを心掛けています。
+          </p>
+          <p class="about-desc">
+            また、<strong>インタラクティブなWebツール</strong>や<strong>シミュレーター・計算ツールなど</strong>の
+            実装を得意としており、複雑なロジック・リアルタイム計算・グラフ表示まで対応できます。<br>
+            「動くものを作りたい」というご要望もお任せください。
+          </p>
+          <a href="#works" class="btn btn-primary">制作実績を見る</a>
+          <p class="about-desc">
+            お気軽にお問い合わせください。
+          </p>
+          <ul class="about-info">
+            <li><i class="fa-solid fa-envelope"></i> xxxxxxxxxxxxxx@gmail.com</li>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">Skills <span>スキル</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon skill-html">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <p class="skill-desc">見やすく整理されたHTMLを作成します。</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-css">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3 class="skill-name">CSS3 / Sass</h3>
+          <p class="skill-desc">レスポンシブ対応やアニメーションを含めたCSS実装が可能です。</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-js">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-desc">JavaScriptを用いたUI制御や動的表現を実装します。</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORKS ========== -->
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title">Works <span>制作実績</span></h2>
+      <div class="works-grid">
+
+        <!-- Work 1: 飲食店コーポレートサイト -->
+        <article class="work-card">
+          <div class="work-image">
+            <div class="work-img">
+              <img src="飲食店.png" alt="飲食店" />
+            </div>
+            <a href="https://nhaku5.github.io/menya-sou/" target="_blank" rel="noopener noreferrer">
+              <div class="work-overlay">
+                <span>コーポレートサイト</span>
+              </div>
+            </a>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">飲食店コーポレートサイト</h3>
+            <p class="work-desc">
+              飲食チェーン店のコーポレートサイト。
+              スマホ・PC双方に対応したレスポンシブレイアウトを実装しました。
+            </p>
+            <ul class="work-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="https://nhaku5.github.io/menya-sou/" target="_blank" rel="noopener noreferrer" class="work-link">
+              デモを見る <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Work 2: 宴会プランビルダー -->
+        <article class="work-card">
+          <div class="work-image">
+            <div class="work-img">
+              <img src="宴会プラン.png" alt="宴会プラン" />
+            </div>
+            <a href="https://nhaku5.github.io/party-planner/" target="_blank" rel="noopener noreferrer">
+              <div class="work-overlay">
+                <span>インタラクティブツール</span>
+              </div>
+            </a>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">ホテル宴会プランビルダー</h3>
+            <p class="work-desc">
+              人数・会場・料理形式・飲み物プランを選択すると合計金額を自動計算。
+              会場キャパシティに応じた選択制御や見積もりのコピー・印刷機能を実装しました。
+            </p>
+            <ul class="work-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="https://nhaku5.github.io/party-planner/" target="_blank" rel="noopener noreferrer" class="work-link">
+              デモを見る <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Work 3: 不動産投資シミュレーター -->
+        <article class="work-card">
+          <div class="work-image">
+            <div class="work-img">
+              <img src="不動産.png" alt="不動産" />
+            </div>
+            <a href="https://nhaku5.github.io/re-sim/" target="_blank" rel="noopener noreferrer">
+              <div class="work-overlay">
+                <span>シミュレーター</span>
+              </div>
+            </a>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">不動産投資シミュレーター</h3>
+            <p class="work-desc">
+              物件情報・融資条件・収支条件を入力すると、25年分のキャッシュフロー推移と
+              株式運用との比較を自動計算・グラフ表示するシミュレーターをバニラJSのみで実装しました。
+            </p>
+            <ul class="work-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="https://nhaku5.github.io/re-sim/" target="_blank" rel="noopener noreferrer" class="work-link">
+              デモを見る <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">N.Haku — Webコーダー</p>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
